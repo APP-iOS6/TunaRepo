@@ -63,7 +63,6 @@ class KioskDataModel {
     
     func getTotalPrice() -> Double {
         let totalPrice: Double = orderedMenus.reduce(0) { $0 + $1.totalPrice }
-        
         return (totalPrice * 100).rounded() / 100
     }
 }
