@@ -296,7 +296,7 @@ struct KioskView: View {
                     }
                 }, label: {
                     if !kioskDataModel.orderedMenus.isEmpty {
-                        Label("Place Order (Total: $\(NSNumber(value: kioskDataModel.getTotalPrice())))",
+                        Label("Place Order (Total: $\(kioskDataModel.getTotalPrice().formatted()))",
                               systemImage: "cart")
                             .font(.title)
                             .fontWeight(.bold)
